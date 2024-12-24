@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERRY CHRISTMAS</title>
+    <link rel="icon" href="./noel.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <audio id="audio" src="./giangsinh.mp3"></audio>
+
+    <div id="as" class="christmas-message">Merry Christmas</div>
+    <div class="tree-container">
+      <img
+        src="https://i.pinimg.com/736x/e8/ee/45/e8ee45345446cc3257eb037244381054.jpg"
+        alt="Cây thông"
+        class="tree-icon"
+      />
+    </div>
+
+    <div class="container">
+      <button id="showButton">Click vào đây</button>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+      <button id="closeButton" class="close-btn">X</button>
+      <div id="ax" class="card">
+        <div class="imgBox">
+          <div class="bark"></div>
+          <img
+            src="https://github.com/Panbap/datapanbap/blob/main/image/mery.png?raw=true"
+          />
+        </div>
+        <div class="details">
+          <h4 class="color margin">MERRY CHRISTMAS</h4>
+          <p>Giáng sinh nữa lại về</p>
+          <p>Cầu chúc cho mọi điều</p>
+          <p>tốt đẹp nhất sẽ đến với bạn.</p>
+          <p>Cầu mong Chúa lắng nghe lời</p>
+          <p>cầu nguyện của bạn.</p>
+          <p>Giáng sinh an lành, bạn của tôi!.</p>
+          <p class="text-right">Chúc mừng Giáng Sinh!</p>
+          <p class="text-right">♥Đinh Quang Trung♥</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.body.addEventListener("click", function () {
+        var audio = document.getElementById("audio");
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
